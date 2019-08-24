@@ -1,0 +1,3 @@
+lane :test do
+  manage_android_versions
+end
