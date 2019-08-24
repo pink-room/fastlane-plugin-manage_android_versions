@@ -1,6 +1,9 @@
 # manage_android_versions plugin
 
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-manage_android_versions)
+[![Build Status](https://travis-ci.org/pink-room/fastlane-plugin-manage_android_versions.svg?branch=master)](https://travis-ci.org/pink-room/fastlane-plugin-manage_android_versions)
+[![Gem
+Version](https://badge.fury.io/rb/fastlane-plugin-manage_android_versions.svg)](https://badge.fury.io/rb/fastlane-plugin-manage_android_versions)
 
 ## Getting Started
 
@@ -14,13 +17,12 @@ fastlane add_plugin manage_android_versions
 
 An easy way to manage your Android App versions.
 
-**Note to author:** Add a more detailed description about this plugin here. If your plugin contains multiple actions, make sure to mention them here.
+### Available actions
+- `get_version_name` to get the App version name
 
 ## Example
 
 Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
-
-**Note to author:** Please set up a sample project to make it easy for users to explore what your plugin does. Provide everything that is necessary to try out the plugin in this project (including a sample Xcode/Android project if necessary)
 
 ## Run tests for this plugin
 

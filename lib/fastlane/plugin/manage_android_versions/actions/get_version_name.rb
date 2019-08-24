@@ -3,10 +3,6 @@ require_relative '../helper/manage_android_versions_helper'
 
 module Fastlane
   module Actions
-    module SharedValues
-      ANDROID_VERSION_NAME = :ANDROID_VERSION_NAME
-    end
-
     class GetVersionNameAction < Action
       def self.run(params)
         UI.message("Getting version name!")
@@ -22,7 +18,7 @@ module Fastlane
         version_name["${versionPatch}"] = version_patch
         version_name["${versionBuild}"] = version_build
 
-        Actions.lane_context[SharedValues::ANDROID_VERSION_NAME] = version_name
+        version_name
       end
 
       def self.description
