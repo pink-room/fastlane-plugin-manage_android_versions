@@ -16,7 +16,9 @@ module Fastlane
         version_name["${versionMajor}"] = version_major
         version_name["${versionMinor}"] = version_minor
         version_name["${versionPatch}"] = version_patch
-        version_name["${versionBuild}"] = version_build
+        if version_name["${versionBuild}"]
+          version_name["${versionBuild}"] = version_build
+        end
 
         version_name
       end
