@@ -19,7 +19,7 @@ android {
     }
 
     defaultConfig {
-        applicationId 'co.pinkroom.app'
+        applicationId 'dev.pinkroom.app'
         minSdkVersion 19
         targetSdkVersion 28
         versionCode versionMajor * 1000000 + versionMinor * 10000 + versionPatch * 100 + versionBuild
